@@ -38,7 +38,7 @@ jobs:
         run: cp dist/mycv/browser/*.* docs
 
       - name: list docs
-        run: ls -la docs\
+        run: ls -la docs
         env: 
          CI_COMMIT_MESSAGE: save spark results
          CI_COMMIT_AUTHOR: adrian
