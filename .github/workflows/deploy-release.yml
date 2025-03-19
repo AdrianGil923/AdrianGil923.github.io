@@ -39,10 +39,12 @@ jobs:
 
       - name: list docs
         run: ls -la docs
+
+      - name: git commit
         env: 
          CI_COMMIT_MESSAGE: save spark results
          CI_COMMIT_AUTHOR: adrian
-         run: |
+        run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "adrian@live.com.mx"
           git add docs
