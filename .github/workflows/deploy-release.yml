@@ -1,7 +1,7 @@
 name: CI/CD deploy release 
 on: 
-  push:
-    branches: [ "deploy-release"]
+ # push:
+    #branches: [ "deploy-release"]
   pull_request:
     branches: [ "deploy-release"]
 jobs:
