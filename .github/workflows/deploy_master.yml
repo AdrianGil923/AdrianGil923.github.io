@@ -47,6 +47,7 @@ jobs:
       - name: build custom docker
         run: docker comit  --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}"
              serving_base ${{ secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+
              
       - name: list images
         run: |
