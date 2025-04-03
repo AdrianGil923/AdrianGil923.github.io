@@ -9,7 +9,7 @@ export class WorkExperienceService {
 
   accessWorkExperience = "work experience running...";
   private dbPath = '/work-experience';
-  
+
   workExperienceRef: AngularFirestoreCollection<WorkExperience>;
 
   constructor(private db: AngularFirestore) {
@@ -20,3 +20,4 @@ export class WorkExperienceService {
     return this.workExperienceRef;
   }
 }
+
