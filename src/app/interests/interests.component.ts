@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./interests.component.css']
 })
 export class InterestsComponent {
-  interests: Interests = new Interests();
+  interests: Interests []  = []  ;
 
   constructor(public interestsService: InterestsService) {
     console.log(this.interestsService);
@@ -20,7 +20,7 @@ export class InterestsComponent {
         )
       )
     ).subscribe(data => {
-      this.interests = data[0];
+      this.interests = data;
       console.log(this.interests);
     });
   }

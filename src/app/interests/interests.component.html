@@ -1,6 +1,8 @@
-<div>
-  <strong>Interests:</strong><br>
+<p> <b> Interests </b> </p>
+<ul *ngFor = "let interests of interests;">
+<li>
   {{ interests.area }} <br>
-  {{ interests.hobby }}
-</div>
+  {{ interests.hobby}}
+</li>
+</ul>
 

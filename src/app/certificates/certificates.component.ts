@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./certificates.component.css']
 })
 export class CertificatesComponent {
-  certificates: Certificates = new Certificates();
+  certificates: Certificates [] = [];
 
   constructor(public certificatesService: CertificatesService) {
     console.log(this.certificatesService);
@@ -21,9 +21,8 @@ export class CertificatesComponent {
         }))
       )
     ).subscribe(data => {
-      this.certificates = data[0];
+      this.certificates = data;
       console.log(this.certificates);
     });
   }
 }
-

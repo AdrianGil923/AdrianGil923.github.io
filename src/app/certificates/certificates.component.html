@@ -1,7 +1,7 @@
-<ul *ngIf="certificates?.certificates">
+<p> <b>Certificates </b> </p>
+<ul *ngFor = "let certificates of certificates;">
   <li>
     Certificates: <br>
     {{ certificates.certificates }}
   </li>
 </ul>
-
