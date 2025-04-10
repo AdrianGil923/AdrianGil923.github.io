@@ -1,6 +1,4 @@
-/* src/styles.css */
 
-/* Estilos globales */
 body, html {
   height: 100%;
   margin: 0;
@@ -13,12 +11,12 @@ body, html {
   color: #000;
 }
 
-/* Estilo del contenido principal */
+
 body > * {
   width: 80%;
   max-width: 900px;
-  background-color: #fff8f0; /* Fondo crema dentro del CV */
-  border: 2px solid #cc0000; /* Bordes rojos */
+  background-color: #fff8f0; 
+  border: 2px solid #cc0000; 
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -26,7 +24,7 @@ body > * {
   color: #000;
 }
 
-/* Estilo para tablas y celdas */
+
 table, td, th {
   border: 1px solid #cc0000;
   border-collapse: collapse;
@@ -34,17 +32,16 @@ table, td, th {
 }
 
 
-/* Títulos y negritas */
 h1, h2, h3, h4, h5, h6, strong {
   color: #cc0000;
 }
 
-/* Listas */
+
 ul {
   color: #000;
 }
 
-/* Enlaces */
+
 a {
   color: #cc0000;
   text-decoration: none;
