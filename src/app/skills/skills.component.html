@@ -1,8 +1,18 @@
-<p> <b> Skills </b> </p>
+<p class="section-title"><i class="fas fa-cogs"></i> <b> Skills </b></p>
+
 <ul *ngFor="let habilidades of skills;">
   <li>
     Skills: <br>
-    {{ habilidades.objectPrograming }} 
-    {{ habilidades.dataBase }} 
+
+    {{ habilidades.objectPrograming }}
+    <div class="skill-bar">
+      <div class="skill-bar-fill"></div>
+    </div>
+
+    {{ habilidades.dataBase }}
+    <div class="skill-bar">
+      <div class="skill-bar-fill"></div>
+    </div>
   </li>
 </ul>
+

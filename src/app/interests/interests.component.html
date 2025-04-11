@@ -1,7 +1,9 @@
-<p> <b> Interests </b> </p>
-<ul *ngFor = "let interests of interests;">
-<li>
-  {{ interests.area }} 
-  {{ interests.hobby }}
-</li>
+<p class="section-title"><i class="fas fa-star"></i> <b> Interests </b></p>
+
+<ul *ngFor="let interests of interests;">
+  <li>
+    {{ interests.area }} <br>
+    {{ interests.hobby }}
+  </li>
 </ul>
+
