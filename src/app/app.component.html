@@ -1,19 +1,32 @@
-version 3
-<table border="1">
-  <tr>
-    <td colspan="2"> <app-header></app-header> </td>
-  </tr>
-  <tr>
-    <td> <app-work-experience></app-work-experience> </td>
-    <td> <app-skills></app-skills> </td>
-  </tr>
-  <tr>
-    <td> <app-education></app-education> </td>
-    <td> <app-certificates></app-certificates> </td>
-  </tr>
-  <tr>
-    <td> <app-languages></app-languages> </td>
-    <td> <app-interests></app-interests> </td>
-  </tr>
-</table>
+<div class="cv-container-infographic">
+  <!-- Columna izquierda -->
+  <div class="left-panel">
+    <app-header></app-header>
+
+    <hr class="divider" />
+
+    <app-work-experience></app-work-experience>
+
+    <hr class="divider" />
+
+    <app-education></app-education>
+  </div>
+
+  <!-- Columna derecha -->
+  <div class="right-panel">
+    <app-skills></app-skills>
+
+    <hr class="divider" />
+
+    <app-certificates></app-certificates>
+
+    <hr class="divider" />
+
+    <app-languages></app-languages>
+
+    <hr class="divider" />
+
+    <app-interests></app-interests>
+  </div>
+</div>
 
