@@ -1,8 +1,18 @@
+<p class="section-title"><i class="fas fa-language"></i> <b> Languages </b></p>
+
 <ul *ngFor="let language of languages">
   <li>
-    Languages: <br>
-    {{ language.espaniol }} <br>
-    {{ language.english }} <br>
+     
+
+    {{ language.espaniol }}
+    <div class="skill-bar">
+      <div class="skill-bar-fill" style="width: 90%"></div>
+    </div>
+
+    {{ language.english }}
+    <div class="skill-bar">
+      <div class="skill-bar-fill" style="width: 20%"></div>
+    </div>
   </li>
 </ul>
 
